@@ -20,4 +20,4 @@ jobs:
     - name: update repo
       env:
         TOKEN: ${{ secrets.TOKEN }}
-      run: starred --username aerosol-can --repository starred --sort --token ${TOKEN} --message 'updated stars'
+      run: starred --username aerosol-can --repository starred --sort --token ${TOKEN} --message 'updated stars' --topic --topic_limit 500 --filename topics.md
